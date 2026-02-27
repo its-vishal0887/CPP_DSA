@@ -19,13 +19,13 @@ bool validParenthesis(string str){
       st.pop();
     }
     if(str[i] == '}'){
-      if(st.top() != '}'){
+      if(st.top() != '{'){
         return false;
       }
       st.pop();
     }
     if(str[i] == ']'){
-      if(st.top() != ']'){
+      if(st.top() != '['){
         return false;
       }
       st.pop();
